@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="date" content="29/05/2021">
+	<meta name="idea création date" content="18/">
+	<meta name="copyright" content="Pikseru kouwa">
+	<meta name="description" content="Le nouveau site de télechargement d'images de libre droit ">
+	<meta name="keywords" content="image ,libre de droit ,download">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="sublime text">
+	<meta name="publisher" content="Pikseru kouwa">
+	<title>Pikseru'gazo</title>
+	<link rel="stylesheet" type="text/css" href="C:\fr\css\header.css">
+	<link rel="stylesheet" type="text/css" href="C:\fr\css\base.css">
+	<link rel="stylesheet" type="text/css" href="C:\fr\css\heart.css">
+	<link rel="stylesheet" type="text/css" href="C:\fr\css\footer.css">
+	<!-- link de bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+	<!-- fin de link de bootstrap -->
+	<!-- Link favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="file:///C:/Users/jihad/OneDrive/Documents/GitHub/fr/image/apple-touch-icon-removebg-preview.png">
+<link rel="icon" type="image/png" sizes="32x32" href="file:///C:/Users/jihad/OneDrive/Documents/GitHub/fr/image/android-chrome-192x192-removebg-preview.png">
+<link rel="manifest" href="/site.webmanifest">
+	<!-- font police de text -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Langar&family=Lato:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+		<!-- fin font police de text -->
+		<!-- icon  -->
+		<script src="https://kit.fontawesome.com/3ce71fcd16.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="font-awesome.min.css">
+		<!-- fin icon -->
+		<!-- style css -->
+		<style>
+* {box-sizing: border-box}
+.mySlides {display: none}
+.enc {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  .from {
+  	opacity: 4;
+  } 
+  .to {
+  	opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+	<div class="container">
+ <div class="header-navbar">
+	<div class="header-navbar_logo">
+		<a href="/fr/index.html" class="header-navbar_menu_link">
+			<h1 class="header-navbar_logo_title" title="lien vers la page d'accueil">Pikseru'gazo</h1>
+		</a>
+	</div>
+<div class="header-navbar_menu_link">
+	<a href="/fr/images.html" class="link-header" title="image photographié">images</a>
+	<a href="/fr/video.html" class="link-header" title="video de votre choix">Video</a>
+	<a href="/fr/dessin.html" class="link-header" title="art dessin ,tout">dessin</a>
+	<a href="/fr/illustration.html" class="link-header" title="design de dessin avec sa pixelisation">illustration</a>
+</div>
+
+	<div class="header-navbar_menu">
+		<div class="navbar">
+  <div class="dropdown">
+    <button type="button" class="btn btn-outline-success" title="choisir un lien en appuyant dessus">Parcourir&nbsp;
+    	<i class="fas fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="\fr\parcourir\about.html" title="droit-d'auteur et les contion d'utilisations">A propos</a>
+      <a href="\fr\parcourir\media.html" title="le tout sur la photographie ,vidéo">media</a>
+      <a href="\fr\parcourir\faq.html" title="question avec nos réponse">FAQ</a>
+      <a href="\fr\parcourir\contribution.html" title="contribution de la création du site">contribution</a>
+      <a href="\fr\parcourir\creator.html" title="choisissez un photographe, artiste ou vidéo créateur">créateur</a>
+      <a href="\fr\parcourir\language.html" title="choisissez une langue en appuyant">langue</a>
+    </div>
+ </div>
+   &nbsp;&nbsp;
+		<button type="button" class="btn btn-outline-info">
+			<a href="/fr/kind/kind-choice.html" class="header-navbar_menu_link" title="quelle genre de photographie ,art">Genre</a>
+		</button>
+		&nbsp;&nbsp;
+    <button type="button" class="btn btn-outline-danger">
+    	<a href="\fr\articles\articles-number.html" class="header-navbar_menu_link" title="articles parlant de dessin ou image">Articles</a>
+    </button>
+ </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- fin header -->
+<div class="heart">
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://cdn.pixabay.com/photo/2020/04/03/19/02/virus-4999857__340.png" class="d-block w-100" alt="vectors">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>La terre contre le covid-19</h5>
+        <p>terre combat contre le covid-19 ,et les humains en gagner</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://cdn.pixabay.com/photo/2019/04/29/20/41/amsterdam-4167026__340.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: #319731;">rue peut-etre de amseterdam</h5>
+        <p style="color: #319731;">beaux dessins ,que dit-je Art .</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2021/01/22/18/09/windy-5940755__340.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>vent</h5>
+        <p>Dans une tel chaleur le vent exite encore.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="img-heart">
+	<a href="/fr/images/ocean-phar49525.html"><img src="/img/lighthouse-6278951_1920.jpg" height="281" width="424">
+	</a>
+</div>
+<div class="img-heart">
+    <a href="/fr/images/fil741.html"><img height="100%" width="100%" src="/img/background-3628553__340.webp">
+    </a>
+</div>
+<div class="img-heart">
+		<a href="/fr/images/cosmos75-espace.html"><img height="226" width="226" src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__340.png">
+		</a>
+</div>
+
+	<div class="img-heart">
+		<a href="/fr/images/coquillage58741noncy.html"><img height="279" width="418" src="https://cdn.pixabay.com/photo/2020/08/08/17/44/cockle-5473563__340.jpg">
+		</a>
+	</div>
+   <div class="img-heart">
+   	<a href="/fr/images/india-children48426.html">
+   		<img height="284" width="426" src="https://cdn.pixabay.com/photo/2021/05/22/18/36/india-6274349__340.jpg">
+		</a>
+   </div>
+   <div class="img-heart">
+   	<a href="/fr/vectors/cuty-dog_858774.html">
+   		<img height="281" width="421" src="https://cdn.pixabay.com/photo/2021/05/22/17/06/hybrid-6274156__340.jpg">
+		</a>
+   </div>
+ <div class="img-heart">
+   	<a href="/fr/images/ocean-sky_868774.html">
+   		<img height="287" width="192" src="https://cdn.pixabay.com/photo/2019/12/02/12/40/milky-way-4667644__340.jpg">
+		</a>
+   </div>
+   <div class="img-heart">
+   	<a href="/fr/images/pictures-inversed_41.html">
+   		<img height="234" width="234" src="https://cdn.pixabay.com/photo/2021/04/07/03/24/walls-6157947__340.jpg">
+		</a>
+   </div>
+   <div class="img-heart">
+   	<a href="/fr/images/aesthetic-1.html">
+   		<img height="350" width="300" src="/fr/image/photo-1533003505519-6a9b92ed4911.jpg">
+		</a>
+   </div>
+    <div class="img-heart">
+   	<a href="/fr/vectors/entrepreneur_3.html">
+   		<img height="330" width="540" src="https://cdn.pixabay.com/photo/2020/09/29/23/38/team-5614157__340.png">
+		</a>
+   </div>
+   <div class="img-heart">
+   	<a href="/fr/images/aest-2.html">
+   		<img src="/fr/image/crop.jpg"width="280" height="500">
+		</a>
+   </div>
+   <div class="img-heart">
+   	<a href="/fr/images/floar216.html">
+   		<img src="https://www.pixambo.com/img/cover_flora.jpg" width="263" height="263">
+		</a>
+   </div>
+   <div class="img-heart">
+   	<a href="/fr/images/peaky-blinders212.html">
+   		<img height="279" width="418" src="https://cdn.pixabay.com/photo/2021/05/11/05/57/men-6245003__340.jpg">
+		</a>
+   </div>
+    <div class="img-heart">
+   	<a href="/fr/images/pont-aest.html">
+   		<img height="279" width="418" src="/fr/image/aest-pont.jpg">
+		</a>
+   </div>
+   <div class="img-heart">
+   	<a href="/fr/images/sushiasat20200.html">
+   		<img height="270" width="433" src="https://cdn.pixabay.com/photo/2017/10/15/11/41/sushi-2853382__340.jpg">
+		</a>
+   </div>
+   <div id="main">
+						<a href="/fr/parcourir/about.html" class="link-footer">About</a>
+						<a href="/fr/parcourir/about.html" class="link-footer">FAQ</a>
+						<a href="/fr/parcourir/about.html" class="link-footer">contribution</a>
+						<a href="/fr/parcourir/about.html" class="link-footer">Licence</a>
+						<a href="/fr/parcourir/about.html" class="link-footer">Réseau sociaux</a>
+						<a href="/fr/parcourir/recrutement.html" class="link-footer">Recrutement</a>
+					</div>
+   </div>
+   <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

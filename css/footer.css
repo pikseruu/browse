@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+
+.footer {
+	height: 80px;
+	width: 450px;
+}
+
+.footer-navbar {
+	height: 100%;
+	width: 450px;
+}
+
+.title-footer {
+	color:#27FF72;
+	font-size:16px;
+	font-family: 'Nunito' sans-serif;
+}
+
+.vyGuhbNV {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+
+.title-logo-footer {
+	color: #27ff72;
+	font-size: 25px;
+}
+
+
+#top2 {
+	position: relative;
+	padding: 20px 20px 5px;
+}
+
+#main {
+  float:left;
+  display: flex;
+  flex-direction: row;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.link-footer {
+  color: #626F67;
+  float: right;
+  margin-left: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="date" content="29/05/2021">
+	<meta name="idea création date" content="18/">
+	<meta name="copyright" content="Pikseru kouwa">
+	<meta name="description" content="Le nouveau site de télechargement d'images de libre droit ">
+	<meta name="keywords" content="image ,libre de droit ,download">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="sublime text">
+	<meta name="publisher" content="Pikseru kouwa">
+	<title>Pikseru'gazo</title>
+	<link rel="stylesheet" type="text/css" href="\fr\css\header.css">
+	<link rel="stylesheet" type="text/css" href="\fr\css\base.css">
+	<link rel="stylesheet" type="text/css" href="\fr\css\heart.css">
+	<link rel="stylesheet" type="text/css" href="\fr\css\footer.css">
+	<!-- link de bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+	<!-- fin de link de bootstrap -->
+	<!-- Link favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="file:///C:/Users/jihad/OneDrive/Documents/GitHub/fr/image/apple-touch-icon-removebg-preview.png">
+<link rel="icon" type="image/png" sizes="32x32" href="file:///C:/Users/jihad/OneDrive/Documents/GitHub/fr/image/android-chrome-192x192-removebg-preview.png">
+<link rel="manifest" href="/site.webmanifest">
+	<!-- font police de text -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Langar&family=Lato:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+		<!-- fin font police de text -->
+		<!-- icon  -->
+		<script src="https://kit.fontawesome.com/3ce71fcd16.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="font-awesome.min.css">
+		<!-- fin icon -->
+		<!-- script -->
+		<script>
+function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  /*create lens:*/
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  /*insert lens:*/
+  img.parentElement.insertBefore(lens, img);
+  /*calculate the ratio between result DIV and lens:*/
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  /*set background properties for the result DIV:*/
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  /*execute a function when someone moves the cursor over the image, or the lens:*/
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  /*and also for touch screens:*/
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    /*prevent any other actions that may occur when moving over the image:*/
+    e.preventDefault();
+    /*get the cursor's x and y positions:*/
+    pos = getCursorPos(e);
+    /*calculate the position of the lens:*/
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    /*prevent the lens from being positioned outside the image:*/
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    /*set the position of the lens:*/
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    /*display what the lens "sees":*/
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /*get the x and y positions of the image:*/
+    a = img.getBoundingClientRect();
+    /*calculate the cursor's x and y coordinates, relative to the image:*/
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /*consider any page scrolling:*/
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="header">
+	<div class="container">
+ <div class="header-navbar">
+	<div class="header-navbar_logo">
+		<a href="/fr/index.html" class="header-navbar_menu_link">
+			<h1 class="header-navbar_logo_title" title="lien vers la page d'accueil">Pikseru'gazo</h1>
+		</a>
+	</div>
+<div class="header-navbar_menu_link">
+	<a href="/fr/images.html" class="link-header" title="image photographié">images</a>
+	<a href="/fr/video.html" class="link-header" title="video de votre choix">Video</a>
+	<a href="/fr/dessin.html" class="link-header" title="art dessin ,tout">dessin</a>
+	<a href="/fr/illustration.html" class="link-header" title="design de dessin avec sa pixelisation">illustration</a>
+</div>
+
+	<div class="header-navbar_menu">
+		<div class="navbar">
+  <div class="dropdown">
+    <button type="button" class="btn btn-outline-success" title="choisir un lien en appuyant dessus">Parcourir&nbsp;
+    	<i class="fas fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="\fr\parcourir\about.html" title="droit-d'auteur et les contion d'utilisations">A propos</a>
+      <a href="\fr\parcourir\media.html" title="le tout sur la photographie ,vidéo">media</a>
+      <a href="\fr\parcourir\faq.html" title="question avec nos réponse">FAQ</a>
+      <a href="\fr\parcourir\contribution.html" title="contribution de la création du site">contribution</a>
+      <a href="\fr\parcourir\creator.html" title="choisissez un photographe, artiste ou vidéo créateur">créateur</a>
+      <a href="\fr\parcourir\language.html" title="choisissez une langue en appuyant">langue</a>
+    </div>
+ </div>
+   &nbsp;&nbsp;
+		<button type="button" class="btn btn-outline-info">
+			<a href="/fr/kind/kind-choice.html" class="header-navbar_menu_link" title="quelle genre de photographie ,art">Genre</a>
+		</button>
+		&nbsp;&nbsp;
+    <button type="button" class="btn btn-outline-danger">
+    	<a href="\fr\articles\articles-number.html" class="header-navbar_menu_link" title="articles parlant de dessin ou image">Articles</a>
+    </button>
+ </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- fin header -->
+<div class="heart">
+
+		<div class="margin"></div>
+		<div class="margin"></div>
+		<div class="margin"></div>
+		<div class="ney">
+			<div class="as">
+				<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Télecharger l'image gratuitement
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tuto Télechargement</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Pour télecharger le document image , click droit - enregistrer sous - choisir uns de vos répectoire
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">ce bouton ne sert à rien</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <p class="aloe">rediriger vous vers ce lien <a href="/fr/parcourir/about.html" style="color:#0080ff;">là</a><br> pour voir ce qu'il faut faire et pas faire</p>
+    <div class="heartboxcdi">
+    	<p>La Licence stipule :<br> - Libre de droit d'usage commercial<br> - Pas d'attribuation requise</p>
+    </div>
+    	<img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" class="avatarpic"><p style="min-height: 20px;width:100px;display: inline;margin: 2px;">Aurélien Barr</p>
+
+    	<div class="d41">
+    		<h5>Nikon d7000</h5>
+    		<p>11.0-16.0 mm f/2.8<br>
+           12.0mm · ƒ/14.0 · 8s · ISO 100</p>
+           <hr>
+        <div class="d50">
+        	<p style="margin-bottom: 10px;">image type</p><p style="margin-bottom: 10px;">Résolution</p><p style="margin-bottom: 10px;">créé</p><p style="margin-bottom: 10px;">last update</p><p style="margin-bottom: 10px;">Affichages</p>
+        </div>
+        <div class="d50p">
+        	<p style="margin-bottom: 10px;margin-left: 200px;">Jpg</p><p style="margin-bottom: 10px;margin-left: 200px;">4928×3264</p><p style="margin-bottom: 10px;margin-left: 200px;">13 août 2015</p><p style="margin-bottom: 10px;margin-left: 200px;">2021</p><p style="margin-bottom: 10px;margin-left: 200px;">23223</p>
+        </div>  
+      </div>
+		</div>
+	</div>
+  <img src="/img/lighthouse-6278951_1920.jpg" width="960" height="635.8441558441548">
+<div class="margin"></div>
+		<div class="margin"></div>
+    <h2 style="font-family: 'Langar', cursive;;color: #F66554;font-size: 64px;">Controle de l'images</h2>
+    <h3 class="FYjdkfRass">Zoom de l'image .</h3>
+    <div class="img-zoom-container">
+      <div class="center">
+  <img id="myimage" src="/img/lighthouse-6278951_1920.jpg"  width="300" height="240" align="right" style="cursor: pointer;">
+  &nbsp;
+  <h6 class="laro">Résultat de l'image&nbsp;➡➡</h6>
+  &nbsp;
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+</div>
+<h3 class="FYjdkfRass">image Shake.</h3>
+<img src="/img/lighthouse-6278951_1920.jpg" class="shake" alt="phare" width="300" height="240">
+<h3 class="FYjdkfRass">image Filtre.</h3>
+<div>
+<img src="/img/lighthouse-6278951_1920.jpg" height="240" width="300" class="vik">
+<div class="margin"></div>
+<img src="/img/lighthouse-6278951_1920.jpg" height="240" width="300" class="viki">
+<div class="margin"></div>
+<img src="/img/lighthouse-6278951_1920.jpg" height="240" width="300" class="vikin">
+<div class="margin"></div>
+<img src="/img/lighthouse-6278951_1920.jpg" height="240" width="300" class="viking">
+
+</div>
+</div>
+</div>
+<script>
+// Initiate zoom effect:
+imageZoom("myimage", "myresult");
+</script>
+	</div>
+</div>
+</body>
+</html>
+ <script src="js/FileSaver.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
