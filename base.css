@@ -1,0 +1,108 @@
+html{
+ background: #f0f0f0;
+ margin: 0;
+ padding: 0;
+}
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 98%;
+	margin: auto;
+}
+
+
+.container-footer {
+	width: 50%;
+	margin: auto;
+}
+
+.container-img-images {
+	width: 80%;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+.margin {
+	margin: 30px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button {
+	display: flex;
+}
+
+img {
+  content: "";
+}
+
+
+@media only screen and (max-width: 992px) {
+  .rtl-op {
+    background-color: lightblue;
+  }
+
+  .header {
+  	    width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  max-width: 100%;
+  height: auto;
+  }
+ 
+
+  .header-navbar_menu_link {
+    opacity: 0;
+  }
+
+  .header-bars {
+  	opacity: 1;
+  	font-size: 30px;
+    cursor: pointer;
+    float: right;
+  }
+  .header-navbar_menu {
+    opacity: 0;
+    float: right;
+  }
+ }
